@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.kabadiwala.fujitsu.thekabadiwala.MainActivity">
+
+
+   <ImageView
+       android:id="@+id/img_second"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@drawable/logo"
+      android:layout_gravity="center"
+       android:layout_marginTop="40dp"
+       />
+   <android.support.design.widget.TextInputLayout
+       android:id="@+id/input_login_username"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:maxLength="10"
+       android:layout_marginTop="100dp"
+
+
+       >
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint=" Enter Mobile Number"
+          android:id="@+id/login_username"
+          android:layout_gravity="center"
+          android:maxLength="10"
+          android:inputType="number"
+
+          />
+
+
+   </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btn"
+        android:background="#6fbe44"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="LOGIN"
+        android:textColor="#ffff"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="or Sign in using"
+        android:textColor="#6fbe44"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="250dp"
+        android:layout_toLeftOf="@id/tvText"
+        android:background="#e76a23"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="250dp"
+        android:layout_toRightOf="@id/tvText"
+        android:background="#e76a23"
+        />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="50dp"
+       android:id="@+id/fblogin_btn"
+       android:drawableLeft="@drawable/fbicons"
+       android:text="Facebook"
+       android:background="#3f51b5"
+       android:textColor="#ffff"
+       android:padding="10dp"
+       android:layout_marginTop="100dp"
+       android:layout_marginLeft="50dp"/>
+
+
+
+</LinearLayout>
