@@ -21,7 +21,10 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:maxLength="10"
-       android:layout_marginTop="100dp"
+       android:layout_marginTop="130dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:focusableInTouchMode="true"
 
 
        >
@@ -35,6 +38,7 @@
           android:maxLength="10"
           android:inputType="number"
 
+
           />
 
 
@@ -42,14 +46,15 @@
 
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:id="@+id/login_btn"
-        android:background="#6fbe44"
+        android:background="@drawable/btn"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
+
         android:text="LOGIN"
-        android:textColor="#ffff"
+        android:textColor="#e76a23"
         android:textSize="20dp"/>
 
 
@@ -63,7 +68,7 @@
         android:text="or Sign in using"
         android:textColor="#6fbe44"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="50dp"/>
 
     <View
         android:layout_width="match_parent"
@@ -83,8 +88,13 @@
         android:background="#e76a23"
         />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
    <Button
-       android:layout_width="wrap_content"
+       android:layout_width="150dp"
        android:layout_height="50dp"
        android:id="@+id/fblogin_btn"
        android:drawableLeft="@drawable/fbicons"
@@ -92,9 +102,25 @@
        android:background="#3f51b5"
        android:textColor="#ffff"
        android:padding="10dp"
-       android:layout_marginTop="100dp"
-       android:layout_marginLeft="50dp"/>
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="30dp"/>
 
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/googlelogin_btn"
+            android:drawableLeft="@drawable/goolelogo"
+            android:text="Google+"
+            android:background="#f4511e"
+            android:textColor="#ffff"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            />
+
+
+
+</LinearLayout>
 
 
 </LinearLayout>

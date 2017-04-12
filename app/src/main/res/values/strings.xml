@@ -2,7 +2,7 @@
     <string name="app_name">The Kabadiwala</string>
     <string name="facebook_appId">735105809983919</string>
     <string name="facebook_text">Facebook</string>
-    <string name="title_activity_dash_board">DashBoardActivity</string>
+
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -11,4 +11,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_dash_board2">DashBoard2</string>
+    <string name="please_wait_facebooklogin">PLease Wait</string>
 </resources>
