@@ -24,7 +24,8 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_appId" />
 
-        <activity android:name=".DashBoard" />
+        <activity android:name=".DashBoard"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
         <activity android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>

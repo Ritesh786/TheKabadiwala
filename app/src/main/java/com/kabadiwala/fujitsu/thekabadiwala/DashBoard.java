@@ -26,7 +26,7 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
 
     Button mlgoutbtn;
 
-    TextView memailtext;
+    TextView memailtext,mnametext;
     ImageView mfbimage;
 
     @Override
@@ -41,18 +41,17 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
         mlgoutbtn.setOnClickListener(this);
 
         memailtext = (TextView) findViewById(R.id.email_text);
+        mnametext = (TextView) findViewById(R.id.name_text);
         mfbimage = (ImageView) findViewById(R.id.fb_image);
 
         Intent intent = getIntent();
         String email = intent.getStringExtra("email");
-
-
+        String name = intent.getStringExtra("name");
 
         memailtext.setText(email);
+        mnametext.setText("Welcome: "+name);
 
         Bundle mBundle =intent.getExtras();
- //         Profile profile = mBundle.getParcelable("pic");
-
         Profile  profile;
 
         if (mBundle != null) {
@@ -61,9 +60,8 @@ public class DashBoard extends AppCompatActivity implements View.OnClickListener
             profile = Profile.getCurrentProfile();
         }
 
-
         Picasso.with(DashBoard.this)
-                .load(profile.getProfilePictureUri(400, 400).toString())
+                .load(profile.getProfilePictureUri(600, 600).toString())
                 .into(mfbimage);
 
 

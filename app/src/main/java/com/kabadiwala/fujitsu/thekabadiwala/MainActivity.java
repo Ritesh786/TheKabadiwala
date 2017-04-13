@@ -126,23 +126,20 @@ public class MainActivity extends AppCompatActivity {
 
                     try {
 
-                        Profile profile = Profile.getCurrentProfile();
-
-
-                        Bundle mBundle = new Bundle();
-                               mBundle.putParcelable("pic", profile);
-
-
                         String email = object.getString("email");
                         String id = object.optString("id");
-                        String name = object.optString("name");
+                        String name = object.getString("first_name");
 
 
+
+
+                        Profile profile = Profile.getCurrentProfile();
+                        Bundle mBundle = new Bundle();
+                               mBundle.putParcelable("pic", profile);
                         Intent loginint = new Intent(MainActivity.this,DashBoard.class);
                        loginint.putExtra("email",email);
+                        loginint.putExtra("name",name);
                         loginint.putExtras(mBundle);
-
-
 
                         startActivity(loginint);
                         finish();
